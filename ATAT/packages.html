@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Ayyapan Tours And Travels - Tour Packages</title> 
+  <link rel="icon" href="images/satnewlogo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/packages.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+
+<body>
+<!-- Contact Bar -->
+<div class="contact-bar bg-dark text-white py-1">
+  <div class="container d-flex justify-content-end align-items-center">
+    <span class="me-3">
+      <i class="fas fa-phone-alt me-1"></i> +91 99405 03503
+    </span>
+    <span>
+      <i class="fas fa-phone-alt me-1"></i> +91 86672 36283
+    </span>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+  <div class="container position-relative" style="overflow: visible;">
+    
+    <!-- Brand Logo -->
+    <a class="navbar-brand p-0 position-absolute" href="index.html" style="top: -35px;">
+      <img src="images/satnewlogo.png" alt="Logo" class="logo-img" />
+    </a>
+
+    <!-- Toggler Button -->
+     <button
+  class="navbar-toggler ms-auto"
+  type="button"
+  onclick="openSidebar()"
+  style="
+    background: linear-gradient(to right, #9e0101, #e00000);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 14px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    box-shadow: 0 4px 12px rgba(155,2,2,0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  "
+  onmouseover="this.style.background='rgba(180, 5, 5, 1)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 15px rgba(155,2,2,0.6)'"
+  onmouseout="this.style.background='rgba(155, 2, 2, 0.9)'; this.style.transform='none'; this.style.boxShadow='0 4px 12px rgba(155,2,2,0.4)'"
+>
+🍂 Menu
+</button>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="whyus.html">Why Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="packages.html">Packages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="carrental.html">Car Rental</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contactus.html">Contact Us</a>
+        </li>
+         
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Sidebar -->
+<div id="mySidebar" class="sidebar">
+  <span class="closebtn" onclick="closeSidebar()">&times;</span>
+  <a href="index.html" onclick="closeSidebar()">Home</a>
+  <a href="whyus.html" onclick="closeSidebar()">Why Us</a>
+  <a href="packages.html" onclick="closeSidebar()">Packages</a>
+   <a href="carrental.html" onclick="closeSidebar()">Car Rental</a>
+  <a href="gallery.html" onclick="closeSidebar()">Gallery</a>
+  <a href="contactus.html" onclick="closeSidebar()">Contact Us</a>
+</div>
+
+<!-- Hero Section -->
+
+<section id="hero" class="text-white text-center">
+  <div class="hero-bg">
+    <picture>
+      <!-- Mobile Image -->
+      <source srcset="images/p2.jpg" media="(max-width: 768px)">
+      <!-- Desktop Image -->
+      <source srcset="images/p2.jpg" media="(min-width: 769px)">
+      <!-- Fallback -->
+      <img src="images/p2.jpg" alt="Sri Ayyapan Tours and Travels Vehicle" />
+    </picture>
+  </div>
+  
+  <div class="hero-content">
+    <h1>Explore Amazing Tour Packages</h1>
+    <p>
+      Discover the rich cultural heritage, breathtaking landscapes, and spiritual destinations of Tamil Nadu and Kerala with our carefully curated tour packages.  </p>
+    
+  </div>
+</section>
+
+
+
+
+
+<!-- Package Filter -->
+<div class="container">
+  <div class="package-filter">
+    <button class="filter-btn active" data-filter="all">All Packages</button>
+    <button class="filter-btn" data-filter="tamil">Tamil Nadu</button>
+    <button class="filter-btn" data-filter="kerala">Kerala</button>
+  </div>
+</div>
+
+<!-- Tamil Nadu Packages -->
+<div class="container">
+  <div class="section-header tamil-header">
+    <h2>Tamil Nadu Packages</h2>
+    <p class="lead">Explore the cultural heart of South India with its magnificent temples, hill stations, and heritage sites</p>
+  </div>
+  
+  <div class="packages-container">
+    <!-- Package 1 -->
+    <div class="package-card" data-category="tamil">
+      <div class="state-badge tamil-badge">Tamil Nadu</div>
+      <div class="package-image">
+        <img src="images/p1.jpg" alt="Temple Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Temple Trail Tour</h3>
+          <div class="package-duration">5 Days</div>
+        </div>
+        <p class="package-description">Explore the magnificent temples of Tamil Nadu including Meenakshi Temple, Brihadeeswarar Temple, and more.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Madurai Meenakshi Temple</li>
+            <li>Thanjavur Brihadeeswarar Temple</li>
+            <li>Rameswaram Ramanathaswamy Temple</li>
+            <li>Kanyakumari Sunset View</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹12,499 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 2 -->
+    <div class="package-card" data-category="tamil">
+      <div class="state-badge tamil-badge">Tamil Nadu</div>
+      <div class="package-image">
+        <img src="images/p2.jpg" alt="Ooty Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Ooty & Kodaikanal Hills</h3>
+          <div class="package-duration">4 Days</div>
+        </div>
+        <p class="package-description">Experience the beauty of the Nilgiri hills with this scenic tour of Ooty and Kodaikanal.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Ooty Botanical Gardens</li>
+            <li>Doddabetta Peak</li>
+            <li>Kodaikanal Lake</li>
+            <li>Pine Forest</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹9,999 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 3 -->
+    <div class="package-card" data-category="tamil">
+      <div class="state-badge tamil-badge">Tamil Nadu</div>
+      <div class="package-image">
+        <img src="images/p3.jpg" alt="Coastal Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Coastal Tamil Nadu</h3>
+          <div class="package-duration">6 Days</div>
+        </div>
+        <p class="package-description">Discover the beautiful coastal regions of Tamil Nadu from Chennai to Kanyakumari.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Marina Beach, Chennai</li>
+            <li>Mahabalipuram Shore Temple</li>
+            <li>Pichavaram Mangrove Forest</li>
+            <li>Kanyakumari Vivekananda Rock</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹14,999 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 4 -->
+    <div class="package-card" data-category="tamil">
+      <div class="state-badge tamil-badge">Tamil Nadu</div>
+      <div class="package-image">
+        <img src="images/p4.jpg" alt="Chettinad Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Chettinad Heritage Tour</h3>
+          <div class="package-duration">3 Days</div>
+        </div>
+        <p class="package-description">Explore the unique architecture and culture of Chettinad region with its magnificent mansions.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Chettinad Mansions</li>
+            <li>Athangudi Tile Making</li>
+            <li>Chettinad Cuisine Experience</li>
+            <li>Karaikudi Local Markets</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹7,499 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 5 -->
+    <div class="package-card" data-category="tamil">
+      <div class="state-badge tamil-badge">Tamil Nadu</div>
+      <div class="package-image">
+        <img src="images/p5.jpg" alt="Wildlife Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Wildlife & Nature</h3>
+          <div class="package-duration">5 Days</div>
+        </div>
+        <p class="package-description">Experience the diverse wildlife and natural beauty of Tamil Nadu's forests and sanctuaries.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Mudumalai National Park</li>
+            <li>Anamalai Tiger Reserve</li>
+            <li>Top Slip Forest</li>
+            <li>Parambikulam Wildlife Sanctuary</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹11,999 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 6 -->
+    <div class="package-card" data-category="tamil">
+      <div class="state-badge tamil-badge">Tamil Nadu</div>
+      <div class="package-image">
+        <img src="images/p6.jpg" alt="Yercaud Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Yercaud Hill Station</h3>
+          <div class="package-duration">3 Days</div>
+        </div>
+        <p class="package-description">Escape to the serene hills of Yercaud, the "Jewel of the South".</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Yercaud Lake</li>
+            <li>Killiyur Falls</li>
+            <li>Pagoda Point</li>
+            <li>Botanical Garden</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹6,999 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 7 -->
+    <div class="package-card" data-category="tamil">
+      <div class="state-badge tamil-badge">Tamil Nadu</div>
+      <div class="package-image">
+        <img src="images/p7.avif" alt="Thanjavur Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Thanjavur Art & Culture</h3>
+          <div class="package-duration">4 Days</div>
+        </div>
+        <p class="package-description">Immerse yourself in the rich art and cultural heritage of Thanjavur region.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Brihadeeswarar Temple</li>
+            <li>Thanjavur Palace</li>
+            <li>Thanjavur Art Gallery</li>
+            <li>Thiruvaiyaru Thyagaraja Temple</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹8,499 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 8 -->
+    <div class="package-card" data-category="tamil">
+      <div class="state-badge tamil-badge">Tamil Nadu</div>
+      <div class="package-image">
+        <img src="images/p8.jpg" alt="Coonoor Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Coonoor Tea Gardens</h3>
+          <div class="package-duration">3 Days</div>
+        </div>
+        <p class="package-description">Experience the lush tea gardens and pleasant climate of Coonoor in the Nilgiris.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Tea Factory Visit</li>
+            <li>Sim's Park</li>
+            <li>Lamb's Rock</li>
+            <li>Dolphin's Nose</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹7,999 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 9 -->
+    <div class="package-card" data-category="tamil">
+      <div class="state-badge tamil-badge">Tamil Nadu</div>
+      <div class="package-image">
+        <img src="images/p9.jpg" alt="Rameshwaram Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Rameshwaram Pilgrimage</h3>
+          <div class="package-duration">4 Days</div>
+        </div>
+        <p class="package-description">A spiritual journey to the holy town of Rameshwaram and nearby religious sites.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Ramanathaswamy Temple</li>
+            <li>Agni Theertham</li>
+            <li>Dhanushkodi</li>
+            <li>Adam's Bridge View</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹8,999 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 10 -->
+    <div class="package-card" data-category="tamil">
+      <div class="state-badge tamil-badge">Tamil Nadu</div>
+      <div class="package-image">
+        <img src="images/p11.webp" alt="Chennai Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Chennai City Explorer</h3>
+          <div class="package-duration">3 Days</div>
+        </div>
+        <p class="package-description">Discover the vibrant capital city of Tamil Nadu with its mix of tradition and modernity.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Kapaleeshwarar Temple</li>
+            <li>Fort St. George</li>
+            <li>Government Museum</li>
+            <li>Marina Beach</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹6,499 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Kerala Packages -->
+<div class="container">
+  <div class="section-header kerala-header">
+    <h2>Kerala Packages</h2>
+    <p class="lead">Experience "God's Own Country" with its serene backwaters, lush greenery, and tranquil beaches</p>
+  </div>
+  
+  <div class="packages-container">
+    <!-- Package 1 -->
+    <div class="package-card" data-category="kerala">
+      <div class="state-badge kerala-badge">Kerala</div>
+      <div class="package-image">
+        <img src="images/p10.avif" alt="Backwater Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Alleppey Backwaters</h3>
+          <div class="package-duration">3 Days</div>
+        </div>
+        <p class="package-description">Cruise through the serene backwaters of Alleppey on a traditional houseboat.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Houseboat Stay</li>
+            <li>Vembanad Lake</li>
+            <li>Paddy Fields</li>
+            <li>Traditional Kerala Meals</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹9,999 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 2 -->
+    <div class="package-card" data-category="kerala">
+      <div class="state-badge kerala-badge">Kerala</div>
+      <div class="package-image">
+        <img src="images/p12.jpeg" alt="Munnar Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Munnar Hill Station</h3>
+          <div class="package-duration">4 Days</div>
+        </div>
+        <p class="package-description">Explore the picturesque tea gardens and misty hills of Munnar.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Tea Plantations</li>
+            <li>Eravikulam National Park</li>
+            <li>Mattupetty Dam</li>
+            <li>Echo Point</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹11,499 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 3 -->
+    <div class="package-card" data-category="kerala">
+      <div class="state-badge kerala-badge">Kerala</div>
+      <div class="package-image">
+        <img src="images/p13.webp" alt="Kochi Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Kochi Cultural Tour</h3>
+          <div class="package-duration">3 Days</div>
+        </div>
+        <p class="package-description">Discover the historic port city of Kochi with its diverse cultural influences.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Fort Kochi</li>
+            <li>Chinese Fishing Nets</li>
+            <li>Jewish Synagogue</li>
+            <li>St. Francis Church</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹7,999 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 4 -->
+    <div class="package-card" data-category="kerala">
+      <div class="state-badge kerala-badge">Kerala</div>
+      <div class="package-image">
+        <img src="images/p14.jpg" alt="Wayanad Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Wayanad Wildlife</h3>
+          <div class="package-duration">4 Days</div>
+        </div>
+        <p class="package-description">Explore the rich biodiversity and tribal culture of Wayanad district.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Edakkal Caves</li>
+            <li>Banasura Sagar Dam</li>
+            <li>Chembra Peak</li>
+            <li>Wayanad Wildlife Sanctuary</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹10,999 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 5 -->
+    <div class="package-card" data-category="kerala">
+      <div class="state-badge kerala-badge">Kerala</div>
+      <div class="package-image">
+        <img src="images/p15.webp" alt="Thekkady Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Thekkady Wildlife</h3>
+          <div class="package-duration">3 Days</div>
+        </div>
+        <p class="package-description">Experience wildlife and spice plantations in the Periyar region of Thekkady.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Periyar Lake Cruise</li>
+            <li>Spice Plantation Tour</li>
+            <li>Elephant Ride</li>
+            <li>Kathakali Performance</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹8,499 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 6 -->
+    <div class="package-card" data-category="kerala">
+      <div class="state-badge kerala-badge">Kerala</div>
+      <div class="package-image">
+        <img src="images/p16.avif" alt="Kovalam Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Kovalam Beach Retreat</h3>
+          <div class="package-duration">4 Days</div>
+        </div>
+        <p class="package-description">Relax on the golden sands of Kovalam and explore nearby attractions.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Kovalam Beach</li>
+            <li>Lighthouse</li>
+            <li>Ayurvedic Massage</li>
+            <li>Trivandrum City Tour</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹9,499 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 7 -->
+    <div class="package-card" data-category="kerala">
+      <div class="state-badge kerala-badge">Kerala</div>
+      <div class="package-image">
+        <img src="images/p17.jpg" alt="Varkala Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Varkala Cliff & Beach</h3>
+          <div class="package-duration">3 Days</div>
+        </div>
+        <p class="package-description">Experience the unique cliff-side beaches and spiritual atmosphere of Varkala.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Varkala Beach</li>
+            <li>Janardanaswamy Temple</li>
+            <li>Papanasam Beach</li>
+            <li>Ayurvedic Treatments</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹7,999 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 8 -->
+    <div class="package-card" data-category="kerala">
+      <div class="state-badge kerala-badge">Kerala</div>
+      <div class="package-image">
+        <img src="images/p18.jpg" alt="Athirappilly Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Athirappilly Waterfalls</h3>
+          <div class="package-duration">3 Days</div>
+        </div>
+        <p class="package-description">Witness the magnificent Athirappilly Falls and explore the surrounding forest areas.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Athirappilly Falls</li>
+            <li>Vazhachal Falls</li>
+            <li>Sholayar Dam</li>
+            <li>Wildlife Spotting</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹8,999 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 9 -->
+    <div class="package-card" data-category="kerala">
+      <div class="state-badge kerala-badge">Kerala</div>
+      <div class="package-image">
+        <img src="images/p19.jpg" alt="Bekal Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Bekal Fort & Beaches</h3>
+          <div class="package-duration">3 Days</div>
+        </div>
+        <p class="package-description">Explore the historic Bekal Fort and pristine beaches of northern Kerala.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Bekal Fort</li>
+            <li>Kappil Beach</li>
+            <li>Bekal Beach</li>
+            <li>Theyyam Performance</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹8,499 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Package 10 -->
+    <div class="package-card" data-category="kerala">
+      <div class="state-badge kerala-badge">Kerala</div>
+      <div class="package-image">
+        <img src="images/p20.jpg" alt="Kumarakom Tour">
+      </div>
+      <div class="package-content">
+        <div class="package-title">
+          <h3>Kumarakom Backwaters</h3>
+          <div class="package-duration">3 Days</div>
+        </div>
+        <p class="package-description">Experience the tranquil backwaters of Kumarakom with bird watching and village tours.</p>
+        <div class="package-highlights">
+          <h4>Highlights</h4>
+          <ul class="highlights-list">
+            <li>Kumarakom Bird Sanctuary</li>
+            <li>Backwater Cruise</li>
+            <li>Village Life Experience</li>
+            <li>Traditional Kerala Cuisine</li>
+          </ul>
+        </div>
+        <div class="package-footer">
+          <div class="package-price">₹9,999 <span>per person</span></div>
+          <button class="btn-package">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Explore South India?</h2>
+    <p>Contact us today to customize your perfect tour package or get more information about our services.</p>
+    <a href="contactus.html" class="btn btn-cta">Contact Us Now</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact" class="bg-dark text-white pt-5 pb-3 mt-5">
+  <div class="container">
+    <!-- Brand / Short Info -->
+    <h3 class="mb-3 fw-semibold">Contact Us</h3>
+    <p class="text-light mb-4" style="max-width: 500px;">
+     <center>We at <strong>Sri Ayyapan Travels</strong> are dedicated to making your journey safe,
+      comfortable, and memorable. Get in touch with us for bookings, inquiries, or travel assistance.</center> 
+    </p>
+
+    <!-- Contact Details -->
+    <p><i class="fas fa-map-marker-alt me-2"></i>Chennai, Tamil Nadu, India</p>
+    <p>
+      <i class="fas fa-phone-alt me-2"></i>
+      <a href="tel:+919940503503" class="text-white text-decoration-none">+91 99405 03503</a>
+    </p>
+    <p>
+      <i class="fas fa-phone-alt me-2"></i>
+      <a href="tel:+918667236283" class="text-white text-decoration-none">+91 86672 36283</a>
+    </p>
+    <p>
+      <i class="fas fa-envelope me-2"></i>
+      <a href="mailto:ayyapantravels@example.com" class="text-white text-decoration-none">sriayyappantourntravels@gmail.com</a>
+    </p>
+
+    <!-- Social Links -->
+    <div class="mt-4">
+      <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+      <a href="#" class="text-white"><i class="fab fa-whatsapp fa-lg"></i></a>
+    </div>
+
+    <!-- Footer Bottom -->
+    <hr class="bg-secondary mt-4" />
+    <p class="text-muted mb-0 small">&copy; 2025 Sri Ayyapan Travels. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('mainNavbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+    }
+  });
+  
+  // Sidebar functions
+  function openSidebar() {
+    document.getElementById("mySidebar").style.width = "250px";
+  }
+  
+  function closeSidebar() {
+    document.getElementById("mySidebar").style.width = "0";
+  }
+  
+  // Package filter functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const packageCards = document.querySelectorAll('.package-card');
+    
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to clicked button
+        this.classList.add('active');
+        
+        const filterValue = this.getAttribute('data-filter');
+        
+        packageCards.forEach(card => {
+          if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+    
+    // Book Now button functionality
+    const bookButtons = document.querySelectorAll('.btn-package');
+    bookButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const packageCard = this.closest('.package-card');
+        const packageName = packageCard.querySelector('h3').textContent;
+        const packagePrice = packageCard.querySelector('.package-price').textContent;
+        
+        // Format WhatsApp message
+        const whatsappNumber = "919940503503";
+        const text = `*New Tour Package Booking*%0A
+---------------------%0A
+*Package:* ${packageName}%0A
+*Price:* ${packagePrice}%0A
+---------------------%0A
+I'm interested in booking this tour package. Please contact me with more details.`;
+        
+        // Open WhatsApp
+        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${text}`;
+        window.open(whatsappURL, "_blank");
+      });
+    });
+  });
+</script>
+</body>
+</html>

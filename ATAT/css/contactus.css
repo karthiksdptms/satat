@@ -318,7 +318,11 @@
             color: white;
             transform: translateY(-3px);
         }
-        
+        li:hover,li.a:hover{
+  font-size: large;
+  font-weight: 600;
+  
+}
 footer {
   background: linear-gradient(135deg, #2c3e50, #34495e);
   color: white;

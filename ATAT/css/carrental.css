@@ -61,11 +61,15 @@
   color: white;
   cursor: pointer;
 }
-
+li:hover,li.a:hover{
+  font-size: large;
+  font-weight: 600;
+  
+}
 /* ===== HERO SECTION ===== */
 #hero {
   position: relative;
-  height: 50vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;

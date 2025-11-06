@@ -36,10 +36,30 @@
     </a>
 
     <!-- Toggler Button -->
-    <button class="navbar-toggler ms-auto" type="button" onclick="openSidebar()"
-            style="background-color: #9b0202; color: #fffefe; border-radius: 10px; padding: 5px 10px; border: none;">
-      Menu
-    </button>
+    <button
+  class="navbar-toggler ms-auto"
+  type="button"
+  onclick="openSidebar()"
+  style="
+    background: linear-gradient(to right, #9e0101, #e00000);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 14px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    box-shadow: 0 4px 12px rgba(155,2,2,0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  "
+  onmouseover="this.style.background='rgba(180, 5, 5, 1)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 15px rgba(155,2,2,0.6)'"
+  onmouseout="this.style.background='rgba(155, 2, 2, 0.9)'; this.style.transform='none'; this.style.boxShadow='0 4px 12px rgba(155,2,2,0.4)'"
+>
+🍂 Menu
+</button>
+
 
     <!-- Collapsible Menu -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -48,10 +68,10 @@
           <a class="nav-link text-white" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#why">Why Us</a>
+          <a class="nav-link text-white" href="whyus.html">Why Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">Packages</a>
+          <a class="nav-link text-white" href="packages.html">Packages</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-white" href="carrental.html">Car Rental</a>
@@ -72,8 +92,8 @@
 <div id="mySidebar" class="sidebar">
   <span class="closebtn" onclick="closeSidebar()">&times;</span>
   <a href="index.html" onclick="closeSidebar()">Home</a>
-  <a href="#why" onclick="closeSidebar()">Why Us</a>
-  <a href="#gallery" onclick="closeSidebar()">Packages</a>
+  <a href="whyus.html" onclick="closeSidebar()">Why Us</a>
+  <a href="packages.html" onclick="closeSidebar()">Packages</a>
    <a href="carrental.html" onclick="closeSidebar()">Car Rental</a>
   <a href="gallery.html" onclick="closeSidebar()">Gallery</a>
   <a href="contactus.html" onclick="closeSidebar()">Contact Us</a>
@@ -547,26 +567,108 @@
   </div>
 </section>
 
+
+<section class="dream-vacation">
+  <div class="container">
+    <h2 class="vacation-title">Plan Your Dream Vacation with Ease</h2>
+    <p class="vacation-subtitle">
+      Vetri Tours n Travels is the best travel agency in Chennai, offering unique travel experiences worldwide.
+      With a highly trained team of holiday planners, we strive to provide customisable travel packages that fit your wishes.
+      We handle everything from beginning to end, allowing our customers to relax and enjoy their holiday.
+    </p>
+
+    <div class="vacation-content">
+      <div class="vacation-text">
+        <h3 class="vacation-heading">
+          The Best Travel Agency in Chennai Helps You Explore the Top Travel Destinations Worldwide
+        </h3>
+
+        <p>
+          Do you want a break from your everyday activities? Now is the time to act on that idea! Picture yourself behind a desk
+          or daydreaming about sitting on a beach hammock, sipping on your go-to drink while looking at the sky, ceasing all the stress in the world effortlessly.
+        </p>
+
+        <p>
+          Bid farewell to tedious activities and welcome breathtaking beaches, extraordinary landmarks, and unforgettable memories.
+          Whether you're a solo traveler, a couple, a family, or a group, we guarantee you the best travel destinations around the globe.
+        </p>
+
+        <p>
+          With a wide range of meticulously selected travel destinations handpicked for your liking, our expert team ensures that
+          your vacation will be remembered. So, what are you waiting for? Grab your bags and plan everything in no time with Vetri Tours n Travels — 
+          Chennai’s most loved travel agency.
+        </p>
+
+       
+
+      <div class="vacation-image">
+        <img src="images/heroimg1.png" alt="Tempo Traveller Vetri Tours" />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="tour-packages">
+  <div class="container">
+    <h2 class="section-title">Budget-Friendly Tour Packages for Every Type of Traveler</h2>
+    <p class="section-description">
+      With our packages, everyone can enjoy their vacation, regardless of their budget. 
+      We offer affordable tour packages designed to help you enjoy your dream vacation without worrying about the cost.
+      SRI AYYAPAN Tours n Travels ensures you get the best travel deals and effortless planning and experiences.
+    </p>
+
+    <div class="packages-grid">
+      <div class="package-card">
+        <img src="images/p2.jpg" alt="Domestic Tour">
+        <div class="overlay" >
+          <h3>Domestic Tour</h3>
+         <a href="packages.html"> <button class="btn-know" >Know More!</button></a>
+        </div>
+      </div>
+
+      
+      <div class="package-card">
+        <img src="images/p7.avif" alt="Family Tour">
+        <div class="overlay">
+          <h3>Family Tour</h3>
+          <a href="packages.html"><button class="btn-know">Know More!</button></a>
+        </div>
+      </div>
+
+     
+
+      <div class="package-card">
+        <img src="images/p5.jpg" alt="Educational Tour">
+        <div class="overlay">
+          <h3>Educational Tour</h3>
+          <a href="packages.html"><button class="btn-know">Know More!</button></a>
+        </div>
+      </div>
+
+      <div class="package-card">
+        <img src="images/p1.jpg" alt="Devotional Tour">
+        <div class="overlay">
+          <h3>Devotional Tour</h3>
+          <a href="packages.html"><button class="btn-know">Know More!</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
 <!-- Image Grid Gallery -->
 <section class="py-5 bg-light text-center">
   <div class="container">
     <h2 class="fw-bold mb-4 text-dark text-decoration text-teal">Our Coach Gallery</h2>
     <div class="row justify-content-center g-4">
+     
       <div class="col-lg-4 col-md-6 col-sm-6 col-10">
-        <div class="card shadow-sm border-0 rounded overflow-hidden">
-          <img src="images/img1.jpg" alt="Fleet 1" class="img-fluid rounded" />
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-10">
-        <div class="card shadow-sm border-0 rounded overflow-hidden">
-          <img src="images/img2.jpg" alt="Fleet 2" class="img-fluid rounded" />
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-10">
-        <div class="card shadow-sm border-0 rounded overflow-hidden">
-          <img src="images/img3.jpg" alt="Fleet 3" class="img-fluid rounded" />
-        </div>
-      </div><div class="col-lg-4 col-md-6 col-sm-6 col-10">
         <div class="card shadow-sm border-0 rounded overflow-hidden">
           <img src="images/img4.jpg" alt="Fleet 3" class="img-fluid rounded" />
         </div>
@@ -591,20 +693,9 @@
           <img src="images/img9.jpg" alt="Fleet 3" class="img-fluid rounded" />
         </div>
       </div>
-      <div class="col-lg-4 col-md-6 col-sm-6 col-10">
-        <div class="card shadow-sm border-0 rounded overflow-hidden">
-          <img src="images/minibus1.jpg" alt="Fleet 3" class="img-fluid rounded" />
-        </div>
-      </div>
-       <div class="col-lg-4 col-md-6 col-sm-6 col-10">
-        <div class="card shadow-sm border-0 rounded overflow-hidden">
-          <img src="images/int1.jpg" alt="Fleet 3" class="img-fluid rounded" />
-        </div>
-      </div> <div class="col-lg-4 col-md-6 col-sm-6 col-10">
-        <div class="card shadow-sm border-0 rounded overflow-hidden">
-          <img src="images/int2.jpg" alt="Fleet 3" class="img-fluid rounded" />
-        </div>
-      </div> <div class="col-lg-4 col-md-6 col-sm-6 col-10">
+    
+       
+     <div class="col-lg-4 col-md-6 col-sm-6 col-10">
         <div class="card shadow-sm border-0 rounded overflow-hidden">
           <img src="images/int3.jpg" alt="Fleet 3" class="img-fluid rounded" />
         </div>
@@ -621,6 +712,41 @@
     </div>
   </div>
 </section>
+
+
+
+<section class="who-we-are">
+  <h2 class="section-heading">Who We Are</h2>
+  <div class="stats-container">
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-user-check"></i></div>
+      <h3>5000+</h3>
+      <p>Happy Clients</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-shield-alt"></i></div>
+      <h3>100%</h3>
+      <p>Safety & Security</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-users"></i></div>
+      <h3>6000+</h3>
+      <p>Successful Trips</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-headset"></i></div>
+      <h3>24/7</h3>
+      <p>Support Available</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
 
 <!-- Footer -->
 <footer id="contact" class="bg-dark text-white pt-5 pb-3 mt-5">

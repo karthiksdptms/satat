@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Choose Us - Sri Ayyapan Tours And Travels</title> 
+  <link rel="icon" href="images/satnewlogo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/whyus.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+</head>
+
+<body>
+<!-- Contact Bar -->
+<div class="contact-bar bg-dark text-white py-1">
+  <div class="container d-flex justify-content-end align-items-center">
+    <span class="me-3">
+      <i class="fas fa-phone-alt me-1"></i> +91 99405 03503
+    </span>
+    <span>
+      <i class="fas fa-phone-alt me-1"></i> +91 86672 36283
+    </span>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+  <div class="container position-relative" style="overflow: visible;">
+    
+    <!-- Brand Logo -->
+    <a class="navbar-brand p-0 position-absolute" href="index.html" style="top: -35px;">
+      <img src="images/satnewlogo.png" alt="Logo" class="logo-img" />
+    </a>
+
+    <!-- Toggler Button -->
+     <button
+  class="navbar-toggler ms-auto"
+  type="button"
+  onclick="openSidebar()"
+  style="
+    background: linear-gradient(to right, #9e0101, #e00000);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 14px;
+    padding: 8px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    box-shadow: 0 4px 12px rgba(155,2,2,0.4);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  "
+  onmouseover="this.style.background='rgba(180, 5, 5, 1)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 15px rgba(155,2,2,0.6)'"
+  onmouseout="this.style.background='rgba(155, 2, 2, 0.9)'; this.style.transform='none'; this.style.boxShadow='0 4px 12px rgba(155,2,2,0.4)'"
+>
+🍂 Menu
+</button>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+       <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="whyus.html">Why Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="packages.html">Packages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="carrental.html">Car Rental</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contactus.html">Contact Us</a>
+        </li>
+         
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Sidebar -->
+<div id="mySidebar" class="sidebar">
+  <span class="closebtn" onclick="closeSidebar()">&times;</span>
+  <a href="index.html" onclick="closeSidebar()">Home</a>
+  <a href="whyus.html" onclick="closeSidebar()">Why Us</a>
+  <a href="packages.html" onclick="closeSidebar()">Packages</a>
+   <a href="carrental.html" onclick="closeSidebar()">Car Rental</a>
+  <a href="gallery.html" onclick="closeSidebar()">Gallery</a>
+  <a href="contactus.html" onclick="closeSidebar()">Contact Us</a>
+</div>
+
+
+<!-- Hero Section -->
+<section id="hero" class="text-white text-center">
+  <div class="hero-bg">
+    <picture>
+      <!-- Mobile Image -->
+      <source srcset="images/satnewlogo.png" media="(max-width: 768px)">
+      <!-- Desktop Image -->
+      <source srcset="images/satnewlogo.png" media="(min-width: 769px)">
+      <!-- Fallback -->
+      <img src="images/satnewlogo.png" alt="Sri Ayyapan Tours and Travels Vehicle" />
+    </picture>
+  </div>
+  
+  <div class="hero-content">
+    <h1>Why Choose Sri Ayyapan Tours & Travels</h1>
+   <p>Experience the difference with our commitment to excellence, safety, and customer satisfaction</p>
+
+  </div>
+</section>
+
+
+<!-- Features Section -->
+<section class="features-section section-padding">
+  <div class="container">
+    <div class="section-title">
+      <h2>Our Key Advantages</h2>
+      <p>Discover what sets us apart from other travel service providers</p>
+    </div>
+    
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Safety First</h3>
+          <p>Your safety is our top priority. All our vehicles undergo regular maintenance and safety checks. Our drivers are trained in defensive driving techniques.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Punctuality Guaranteed</h3>
+          <p>We understand the value of your time. Our drivers arrive promptly at your location, ensuring you reach your destination on schedule.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-car"></i>
+          </div>
+          <h3>Well-Maintained Fleet</h3>
+          <p>Our diverse fleet of vehicles is regularly serviced and maintained to the highest standards, ensuring comfort and reliability throughout your journey.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-rupee-sign"></i>
+          </div>
+          <h3>Transparent Pricing</h3>
+          <p>No hidden charges or surprises. We provide clear, upfront pricing with detailed breakdowns so you know exactly what you're paying for.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3>Professional Drivers</h3>
+          <p>Our experienced, courteous, and well-trained drivers are familiar with routes across Tamil Nadu and beyond, ensuring a smooth journey.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>24/7 Customer Support</h3>
+          <p>Round-the-clock assistance for any queries, changes to your booking, or emergencies during your travel with us.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats-section section-padding">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-3 col-6">
+        <div class="stat-item">
+          <div class="stat-number">10+</div>
+          <div class="stat-text">Years of Experience</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="stat-item">
+          <div class="stat-number">5000+</div>
+          <div class="stat-text">Happy Customers</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-text">Vehicles in Fleet</div>
+        </div>
+      </div>
+      <div class="col-md-3 col-6">
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-text">Customer Support</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process Section -->
+<section class="section-padding">
+  <div class="container">
+    <div class="section-title">
+      <h2>How We Ensure Your Comfort</h2>
+      <p>Our systematic approach to delivering exceptional travel experiences</p>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <h4>Vehicle Selection</h4>
+          <p>Choose from our diverse fleet of well-maintained vehicles that best suit your travel needs and group size.</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <h4>Driver Assignment</h4>
+          <p>We assign the most suitable professional driver based on your route and specific requirements.</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <h4>Pre-Trip Inspection</h4>
+          <p>Every vehicle undergoes a thorough inspection before your journey to ensure optimal performance.</p>
+        </div>
+      </div>
+      
+      <div class="col-lg-3 col-md-6">
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <h4>Journey Monitoring</h4>
+          <p>We monitor your journey to provide assistance if needed and ensure a smooth travel experience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="features-section section-padding">
+  <div class="container">
+    <div class="section-title">
+      <h2>What Our Customers Say</h2>
+      <p>Hear from travelers who have experienced our exceptional service</p>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "I've been using Sri Ayyapan Tours for my business trips for over 3 years. Their punctuality and professional drivers make my travels stress-free. Highly recommended!"
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="images/customer1.jpg" alt="Rajesh Kumar">
+            </div>
+            <div class="author-info">
+              <h4>Rajesh Kumar</h4>
+              <p>Business Traveler</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "Our family trip to Kodaikanal was made perfect by Sri Ayyapan Tours. The Innova Crysta was spacious and comfortable, and the driver was very courteous and knowledgeable."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="images/customer2.jpg" alt="Priya Suresh">
+            </div>
+            <div class="author-info">
+              <h4>Priya Suresh</h4>
+              <p>Family Vacation</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "I regularly rent cars for my corporate guests, and Sri Ayyapan Tours has never disappointed. Their service is reliable, and their fleet is always well-maintained."
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="images/customer3.jpg" alt="Arun Mehta">
+            </div>
+            <div class="author-info">
+              <h4>Arun Mehta</h4>
+              <p>Corporate Client</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "The pricing is transparent with no hidden costs, which I really appreciate. The car was clean, and the driver arrived 10 minutes early. Excellent service!"
+          </div>
+          <div class="testimonial-author">
+            <div class="author-avatar">
+              <img src="images/customer4.jpg" alt="Deepa Ranganathan">
+            </div>
+            <div class="author-info">
+              <h4>Deepa Ranganathan</h4>
+              <p>Regular Customer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Ready to Experience the Difference?</h2>
+    <p>Book your journey with Sri Ayyapan Tours & Travels today and discover why we're the preferred choice for travelers in Tamil Nadu.</p>
+    <a href="contactus.html" class="btn btn-cta">Contact Us Now</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact" class="bg-dark  pt-5 pb-3 mt-5">
+  <div class="container">
+    <!-- Brand / Short Info -->
+    <h3 class="mb-3 fw-semibold">Contact Us</h3>
+    <p class="text-light mb-4" style="max-width: 500px;">
+     <center>We at <strong>Sri Ayyapan Travels</strong> are dedicated to making your journey safe,
+      comfortable, and memorable. Get in touch with us for bookings, inquiries, or travel assistance.</center> 
+    </p>
+
+    <!-- Contact Details -->
+    <p><i class="fas fa-map-marker-alt me-2"></i>Chennai, Tamil Nadu, India</p>
+    <p>
+      <i class="fas fa-phone-alt me-2 "></i>
+      <a href="tel:+919940503503" class="text-white text-decoration-none">+91 99405 03503</a>
+    </p>
+    <p>
+      <i class="fas fa-phone-alt me-2"></i>
+      <a href="tel:+918667236283" class="text-white text-decoration-none">+91 86672 36283</a>
+    </p>
+    <p>
+      <i class="fas fa-envelope me-2"></i>
+      <a href="mailto:ayyapantravels@example.com" class="text-white text-decoration-none">sriayyappantourntravels@gmail.com</a>
+    </p>
+
+    <!-- Social Links -->
+    <div class="mt-4">
+      <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="#" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+      <a href="#" class="text-white "><i class="fab fa-whatsapp fa-lg"></i></a>
+    </div>
+
+    <!-- Footer Bottom -->  
+    <hr class="bg-secondary mt-4" />
+    <p class="text-muted mb-0 small">&copy; 2025 Sri Ayyapan Travels. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('mainNavbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+    }
+  });
+  
+  // Sidebar functions
+  function openSidebar() {
+    document.getElementById("mySidebar").style.width = "250px";
+  }
+  
+  function closeSidebar() {
+    document.getElementById("mySidebar").style.width = "0";
+  }
+</script>
+</body>
+</html>
