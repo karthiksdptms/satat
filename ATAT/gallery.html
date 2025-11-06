@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Ayyapan Tours And Travels</title> 
+  <link rel="icon" href="images/satnewlogo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="App.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/gallery.css">
+<style>
+</style>
+</head>
+
+<body>
+<!-- Contact Bar -->
+<div class="contact-bar bg-dark text-white py-1">
+  <div class="container d-flex justify-content-end align-items-center">
+    <span class="me-3">
+      <i class="fas fa-phone-alt me-1"></i> +91 99405 03503
+    </span>
+    <span>
+      <i class="fas fa-phone-alt me-1"></i> +91 86672 36283
+    </span>
+  </div>
+</div>
+<!-- Navbar -->
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+  <div class="container position-relative" style="overflow: visible;">
+    
+    <!-- Brand Logo -->
+    <a class="navbar-brand p-0 position-absolute" href="index.html" style="top: -35px;">
+      <img src="images/satnewlogo.png" alt="Logo" class="logo-img" />
+    </a>
+
+    <!-- Toggler Button -->
+    <button class="navbar-toggler ms-auto" type="button" onclick="openSidebar()"
+            style="background-color: #9b0202; color: #fffefe; border-radius: 10px; padding: 5px 10px; border: none;">
+      Menu
+    </button>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#why">Why Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Packages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Car Rental</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contactus.html">Contact Us</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Sidebar -->
+<div id="mySidebar" class="sidebar">
+  <span class="closebtn" onclick="closeSidebar()">&times;</span>
+  <a href="index.html" onclick="closeSidebar()">Home</a>
+  <a href="#why" onclick="closeSidebar()">Why Us</a>
+  <a href="#gallery" onclick="closeSidebar()">Packages</a>
+   <a href="#gallery" onclick="closeSidebar()">Car Rental</a>
+  <a href="#gallery" onclick="closeSidebar()">Gallery</a>
+  <a href="contactus.html" onclick="closeSidebar()">Contact Us</a>
+</div>
+
+
+<!-- Hero Section -->
+<section id="hero" class="text-white text-center">
+  <div class="hero-bg">
+    <picture>
+      <!-- Mobile Image -->
+      <source srcset="images/heroimg.jpg" media="(max-width: 768px)">
+      <!-- Desktop Image -->
+      <source srcset="images/heroimg1.png" media="(min-width: 769px)">
+      <!-- Fallback -->
+      <img src="images/heroimg1.png" alt="Sri Ayyapan Tours and Travels Vehicle" />
+    </picture>
+  </div>
+  
+  <div class="hero-content">
+    <h1>Gallery</h1>
+    
+  </div>
+</section>
+
+<!-- Gallery Section -->
+<section class="gallery-section">
+  <div class="container">
+    <div class="gallery-header">
+      <h1>Our Fleet Gallery</h1>
+      <p>Explore our premium collection of vehicles designed for comfort, safety, and unforgettable journeys</p>
+    </div>
+    
+    <div class="gallery-filter">
+      <button class="filter-btn active" data-filter="all">All Vehicles</button>
+      <button class="filter-btn" data-filter="coach">Luxury Coaches</button>
+      <button class="filter-btn" data-filter="urbania">Urbania</button>
+      <button class="filter-btn" data-filter="tempo">Tempo Traveller</button>
+      <button class="filter-btn" data-filter="car">Cars</button>
+    </div>
+    
+    <div class="gallery-container">
+      <!-- Vehicle 1 -->
+      <div class="gallery-item" data-category="coach">
+        <img src="images/img6.jpg" alt="Luxury Coach 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/img4.jpg" data-bs-title="Luxury Coach - 40 Seater" data-bs-description="Premium 40-seater luxury coach with reclining seats, AC, and entertainment system">
+        <div class="gallery-overlay">
+          <h4>Luxury Coach - 12-18 Seater</h4>
+          <p>Premium comfort for group travel</p>
+        </div>
+      </div>
+      
+      <!-- Vehicle 2 -->
+      <div class="gallery-item" data-category="coach">
+        <img src="images/int3.jpg" alt="Luxury Coach 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/int3.jpg" data-bs-title="Executive Coach - 35 Seater" data-bs-description="Executive class coach with extra legroom and premium amenities">
+        <div class="gallery-overlay">
+          <h4>Executive Coach - 32 Seater</h4>
+          <p>Extra legroom and premium amenities</p>
+        </div>
+      </div>
+      
+      <!-- Vehicle 3 -->
+      <div class="gallery-item" data-category="coach">
+        <img src="images/img4.jpg" alt="Luxury Coach 3" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/coach3.jpg" data-bs-title="Sleeper Coach - 30 Berths" data-bs-description="Overnight sleeper coach with comfortable berths for long journeys">
+        <div class="gallery-overlay">
+          <h4>party Coach - 30 Berths</h4>
+          <p>Comfortable overnight travel</p>
+        </div>
+      </div>
+      
+      <!-- Vehicle 4 -->
+      <div class="gallery-item" data-category="urbania">
+        <img src="images/force-urbania.avif" alt="Urbania 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/urbania1.jpg" data-bs-title="Force Urbania - 15 Seater" data-bs-description="Spacious and comfortable Urbania with premium interiors">
+        <div class="gallery-overlay">
+          <h4>Force Urbania - 15 Seater</h4>
+          <p>Spacious and comfortable</p>
+        </div>
+      </div>
+      
+      <!-- Vehicle 5 -->
+      <div class="gallery-item" data-category="urbania">
+        <img src="images/urbaniainterior.png" alt="Urbania 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/urbania2.jpg" data-bs-title="Force Urbania Executive" data-bs-description="Executive Urbania with leather seats and premium audio system">
+        <div class="gallery-overlay">
+          <h4>Force Urbania Executive</h4>
+          <p>Luxury travel for small groups</p>
+        </div>
+      </div>
+      
+      <!-- Vehicle 6 -->
+      <div class="gallery-item" data-category="tempo">
+        <img src="images/tempooo.png" alt="Tempo Traveller 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/tempo1.jpg" data-bs-title="Tempo Traveller - 12 Seater" data-bs-description="Compact and efficient 12-seater tempo traveller with AC">
+        <div class="gallery-overlay">
+          <h4>Tempo Traveller - 12 Seater</h4>
+          <p>Compact and efficient</p>
+        </div>
+      </div>
+      
+      <!-- Vehicle 7 -->
+      <div class="gallery-item" data-category="tempo">
+        <img src="images/img1.jpg" alt="Tempo Traveller 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/tempo2.jpg" data-bs-title="Tempo Traveller Luxury" data-bs-description="Luxury tempo traveller with premium upholstery and entertainment">
+        <div class="gallery-overlay">
+          <h4>Tempo Traveller Luxury</h4>
+          <p>Premium comfort for small groups</p>
+        </div>
+      </div>
+      
+      <!-- Vehicle 8 -->
+      <div class="gallery-item" data-category="tempo">
+        <img src="images/tempoimg.png" alt="Tempo Traveller 3" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/tempo3.jpg" data-bs-title="Tempo Traveller - 9 Seater" data-bs-description="Compact 9-seater tempo with comfortable seating and AC">
+        <div class="gallery-overlay">
+          <h4>Tempo Traveller - 18 Seater</h4>
+          <p>Perfect for family trips</p>
+        </div>
+      </div>
+      
+      <!-- Vehicle 9 -->
+      <div class="gallery-item" data-category="car">
+        <img src="images/crysta.jpg" alt="Car 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/car1.jpg" data-bs-title="Toyota Innova Crysta" data-bs-description="Premium SUV with comfortable seating for 7 passengers">
+        <div class="gallery-overlay">
+          <h4>Toyota Innova Crysta</h4>
+          <p>Premium SUV comfort</p>
+        </div>
+      </div>
+      
+      <!-- Vehicle 10 -->
+      <div class="gallery-item" data-category="car">
+        <img src="images/hycross.jpg" alt="Car 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/car2.jpg" data-bs-title="Maruti Suzuki Ertiga" data-bs-description="Compact MPV with excellent fuel efficiency and comfortable seating">
+        <div class="gallery-overlay">
+          <h4>Innova Hycross</h4>
+          <p>Compact and efficient</p>
+        </div>
+      </div>
+      
+      <!-- Vehicle 11 -->
+      <div class="gallery-item" data-category="car">
+        <img src="images/fortuner.jpg" alt="Car 3" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/car3.jpg" data-bs-title="Hyundai Creta" data-bs-description="Stylish SUV with modern features and comfortable interior">
+        <div class="gallery-overlay">
+          <h4>Toyota Fortuner</h4>
+          <p>Stylish and modern</p>
+        </div>
+      </div>
+      
+      <!-- Vehicle 12 -->
+      <div class="gallery-item" data-category="coach">
+        <img src="images/minibus.jpg" alt="Luxury Coach 4" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/coach4.jpg" data-bs-title="Volvo Multi-Axle Coach" data-bs-description="Premium Volvo multi-axle coach with superior comfort and safety features">
+        <div class="gallery-overlay">
+          <h4>Multi-Axle Coach</h4>
+          <p>Superior comfort and safety</p>
+        </div>
+      </div>
+      
+      <!-- Vehicle 13 -->
+      <div class="gallery-item" data-category="urbania">
+        <img src="images/urbania18.png" alt="Urbania 3" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/urbania3.jpg" data-bs-title="Force Urbania Deluxe" data-bs-description="Deluxe Urbania with extra storage space and comfortable seating">
+        <div class="gallery-overlay">
+          <h4>Force Urbania Deluxe</h4>
+          <p>Extra storage and comfort</p>
+        </div>
+      </div>
+      
+      <!-- Vehicle 14 -->
+      <div class="gallery-item" data-category="tempo">
+        <img src="images/tempotraveller.jpg" alt="Tempo Traveller 4" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/tempo4.jpg" data-bs-title="Tempo Traveller with Luggage Rack" data-bs-description="Tempo traveller with additional luggage rack for extended trips">
+        <div class="gallery-overlay">
+          <h4>Tempo with Luggage Rack</h4>
+          <p>Perfect for extended trips</p>
+        </div>
+      </div>
+      
+      <!-- Vehicle 15 -->
+      <div class="gallery-item" data-category="car">
+        <img src="images/amaze.jpg" alt="Car 4" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/car4.jpg" data-bs-title="Mahindra XUV700" data-bs-description="Premium SUV with advanced features and spacious interior">
+        <div class="gallery-overlay">
+          <h4>Amaze</h4>
+          <p>Advanced features and space</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Fleet Info Section -->
+<section class="fleet-info">
+  <div class="container">
+    <h2>Why Choose Our Fleet?</h2>
+    <p class="lead mb-5">We maintain our vehicles to the highest standards to ensure your journey is safe, comfortable, and memorable.</p>
+    
+    <div class="fleet-features">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h4>Safety First</h4>
+        <p>All our vehicles undergo regular safety checks and are equipped with modern safety features.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-couch"></i>
+        </div>
+        <h4>Premium Comfort</h4>
+        <p>Plush seating, ample legroom, and climate control for a comfortable journey.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-tools"></i>
+        </div>
+        <h4>Regular Maintenance</h4>
+        <p>Our fleet is maintained by certified technicians to ensure optimal performance.</p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-icon">
+          <i class="fas fa-user-tie"></i>
+        </div>
+        <h4>Experienced Drivers</h4>
+        <p>Our professional drivers are trained for safe and courteous service.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Image Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">Vehicle Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img id="modalImage" src="" alt="" class="img-fluid">
+      </div>
+      <div class="modal-footer flex-column">
+        <h5 id="modalTitle" class="w-100 text-start"></h5>
+        <p id="modalDescription" class="w-100 text-start mb-3"></p>
+        <div class="w-100">
+          <a href="contactus.html" class="btn btn-primary me-2">Book This Vehicle</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="contact" class="bg-dark  pt-5 pb-3 mt-5">
+  <div class="container">
+    <!-- Brand / Short Info -->
+    <h3 class="mb-3 fw-semibold">Contact Us</h3>
+    <p class="text-light mb-4" style="max-width: 500px;">
+     <center>We at <strong>Sri Ayyapan Travels</strong> are dedicated to making your journey safe,
+      comfortable, and memorable. Get in touch with us for bookings, inquiries, or travel assistance.</center> 
+    </p>
+
+    <!-- Contact Details -->
+    <p><i class="fas fa-map-marker-alt me-2"></i>Chennai, Tamil Nadu, India</p>
+    <p>
+      <i class="fas fa-phone-alt me-2 "></i>
+      <a href="tel:+919940503503" class="text-black text-decoration-none">+91 99405 03503</a>
+    </p>
+    <p>
+      <i class="fas fa-phone-alt me-2"></i>
+      <a href="tel:+918667236283" class="text-black text-decoration-none">+91 86672 36283</a>
+    </p>
+    <p>
+      <i class="fas fa-envelope me-2"></i>
+      <a href="mailto:ayyapantravels@example.com" class="text-black text-decoration-none">sriayyappantourntravels@gmail.com</a>
+    </p>
+
+    <!-- Social Links -->
+    <div class="mt-4">
+      <a href="#" class="text-black me-3"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="#" class="text-black me-3"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="#" class="text-black me-3"><i class="fab fa-twitter fa-lg"></i></a>
+      <a href="#" class="text-black "><i class="fab fa-whatsapp fa-lg"></i></a>
+    </div>
+
+    <!-- Footer Bottom -->
+    <hr class="bg-secondary mt-4" />
+    <p class="text-muted mb-0 small">&copy; 2025 Sri Ayyapan Travels. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+
+
+<!-- Scripts -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('mainNavbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+    }
+  });
+  
+  // Sidebar functions
+  function openSidebar() {
+    document.getElementById("mySidebar").style.width = "250px";
+  }
+  
+  function closeSidebar() {
+    document.getElementById("mySidebar").style.width = "0";
+  }
+  
+  // Gallery filter functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to clicked button
+        this.classList.add('active');
+        
+        const filterValue = this.getAttribute('data-filter');
+        
+        galleryItems.forEach(item => {
+          if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+    
+    // Modal functionality
+    const imageModal = document.getElementById('imageModal');
+    if (imageModal) {
+      imageModal.addEventListener('show.bs.modal', function(event) {
+        const button = event.relatedTarget;
+        const imageSrc = button.getAttribute('data-bs-image');
+        const imageTitle = button.getAttribute('data-bs-title');
+        const imageDescription = button.getAttribute('data-bs-description');
+        
+        document.getElementById('modalImage').src = imageSrc;
+        document.getElementById('modalImage').alt = imageTitle;
+        document.getElementById('modalTitle').textContent = imageTitle;
+        document.getElementById('modalDescription').textContent = imageDescription;
+      });
+    }
+  });
+</script>
+<script>
+  window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('mainNavbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+    }
+  });
+</script>
+<script>
+  function openSidebar() {
+    document.getElementById("mySidebar").style.width = "250px";
+  }
+  
+  function closeSidebar() {
+    document.getElementById("mySidebar").style.width = "0";
+  }
+</script>
+
+<script>
+  const scrollContainer = document.querySelector('.scroll-container');
+  const nextBtn = document.querySelector('.next-btn');
+  const prevBtn = document.querySelector('.prev-btn');
+
+  nextBtn.addEventListener('click', () => {
+    scrollContainer.scrollBy({ left: 470, behavior: 'smooth' });
+  });
+
+  prevBtn.addEventListener('click', () => {
+    scrollContainer.scrollBy({ left: -470, behavior: 'smooth' });
+  });
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var enquiryModal = document.getElementById('enquiryModal');
+  enquiryModal.addEventListener('show.bs.modal', function (event) {
+    var button = event.relatedTarget;
+    var vehicleInfo = button.getAttribute('data-vehicle');
+    var inputField = enquiryModal.querySelector('#vehicleInfo');
+    inputField.value = vehicleInfo;
+  });
+});
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sri Ayyapan Tours And Travels - Car Rental</title> 
+  <link rel="icon" href="images/satnewlogo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="App.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/carrental.css">
+  <style>
+   
+  </style>
+</head>
+
+<body>
+<!-- Contact Bar -->
+<div class="contact-bar bg-dark text-white py-1">
+  <div class="container d-flex justify-content-end align-items-center">
+    <span class="me-3">
+      <i class="fas fa-phone-alt me-1"></i> +91 99405 03503
+    </span>
+    <span>
+      <i class="fas fa-phone-alt me-1"></i> +91 86672 36283
+    </span>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark fixed-top py-3">
+  <div class="container position-relative" style="overflow: visible;">
+    
+    <!-- Brand Logo -->
+    <a class="navbar-brand p-0 position-absolute" href="index.html" style="top: -35px;">
+      <img src="images/satnewlogo.png" alt="Logo" class="logo-img" />
+    </a>
+
+    <!-- Toggler Button -->
+    <button class="navbar-toggler ms-auto" type="button" onclick="openSidebar()"
+            style="background-color: #9b0202; color: #fffefe; border-radius: 10px; padding: 5px 10px; border: none;">
+      Menu
+    </button>
+
+    <!-- Collapsible Menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#why">Why Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Packages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white active" href="car-rental.html">Car Rental</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="gallery.html">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="contactus.html">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Sidebar -->
+<div id="mySidebar" class="sidebar">
+  <span class="closebtn" onclick="closeSidebar()">&times;</span>
+  <a href="index.html" onclick="closeSidebar()">Home</a>
+  <a href="#why" onclick="closeSidebar()">Why Us</a>
+  <a href="#gallery" onclick="closeSidebar()">Packages</a>
+  <a href="car-rental.html" onclick="closeSidebar()">Car Rental</a>
+  <a href="gallery.html" onclick="closeSidebar()">Gallery</a>
+  <a href="contactus.html" onclick="closeSidebar()">Contact Us</a>
+</div>
+
+<!-- Hero Section -->
+<section id="hero" class="text-white text-center">
+  <div class="hero-bg">
+    <picture>
+      <!-- Mobile Image -->
+      <source srcset="images/heroimg.jpg" media="(max-width: 768px)">
+      <!-- Desktop Image -->
+      <source srcset="images/heroimg1.png" media="(min-width: 769px)">
+      <!-- Fallback -->
+      <img src="images/heroimg1.png" alt="Sri Ayyapan Tours and Travels Vehicle" />
+    </picture>
+  </div>
+  
+  <div class="hero-content">
+    <h1>Car Rental</h1>
+    <p class="lead">Premium cars for your travel needs</p>
+  </div>
+</section>
+
+<!-- Car Rental Section -->
+<section class="car-rental-section">
+  <div class="container">
+    <div class="rental-header">
+      <h1>Our Car Rental Fleet</h1>
+      <p>Choose from our premium collection of well-maintained cars for a comfortable and memorable journey</p>
+    </div>
+    
+    <div class="car-filter">
+      <button class="car-filter-btn active" data-filter="all">All Cars</button>
+      <button class="car-filter-btn" data-filter="suv">SUV</button>
+      <button class="car-filter-btn" data-filter="mpv">MPV</button>
+      <button class="car-filter-btn" data-filter="sedan">Sedan</button>
+    </div>
+    
+    <div class="cars-container">
+      <!-- Innova Hycross -->
+      <div class="car-card" data-category="mpv">
+        <div class="car-image">
+          <img src="images/hycross.jpg" alt="Toyota Innova Hycross">
+        </div>
+        <div class="car-details">
+          <div class="car-title">
+            <div>
+              <h3>Toyota Innova Hycross</h3>
+              <p class="text-muted">Premium MPV</p>
+            </div>
+            <div class="car-price">₹25/km</div>
+          </div>
+          
+          <div class="car-features">
+            <div class="car-feature">
+              <i class="fas fa-users"></i>
+              <span>7 Seater</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-snowflake"></i>
+              <span>AC</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-gas-pump"></i>
+              <span>Petrol</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>Automatic</span>
+            </div>
+          </div>
+          
+          <p class="car-description">
+            The Toyota Innova Hycross offers premium comfort with its hybrid powertrain, spacious interior, and advanced features for a smooth ride.
+          </p>
+          
+          <div class="car-actions">
+            <button class="btn-book" data-bs-toggle="modal" data-bs-target="#bookingModal" data-car="Toyota Innova Hycross">Book Now</button>
+            <button class="btn-details" data-bs-toggle="modal" data-bs-target="#carModal" data-car="hycross">Details</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Innova Crysta -->
+      <div class="car-card" data-category="mpv">
+        <div class="car-image">
+          <img src="images/crysta.jpg" alt="Toyota Innova Crysta">
+        </div>
+        <div class="car-details">
+          <div class="car-title">
+            <div>
+              <h3>Toyota Innova Crysta</h3>
+              <p class="text-muted">Luxury MPV</p>
+            </div>
+            <div class="car-price">₹22/km</div>
+          </div>
+          
+          <div class="car-features">
+            <div class="car-feature">
+              <i class="fas fa-users"></i>
+              <span>7 Seater</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-snowflake"></i>
+              <span>AC</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-gas-pump"></i>
+              <span>Diesel</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>Manual</span>
+            </div>
+          </div>
+          
+          <p class="car-description">
+            The Toyota Innova Crysta is known for its reliability, powerful performance, and spacious cabin perfect for family trips and corporate travel.
+          </p>
+          
+          <div class="car-actions">
+            <button class="btn-book" data-bs-toggle="modal" data-bs-target="#bookingModal" data-car="Toyota Innova Crysta">Book Now</button>
+            <button class="btn-details" data-bs-toggle="modal" data-bs-target="#carModal" data-car="crysta">Details</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Toyota Fortuner -->
+      <div class="car-card" data-category="suv">
+        <div class="car-image">
+          <img src="images/fortuner.jpg" alt="Toyota Fortuner">
+        </div>
+        <div class="car-details">
+          <div class="car-title">
+            <div>
+              <h3>Toyota Fortuner</h3>
+              <p class="text-muted">Premium SUV</p>
+            </div>
+            <div class="car-price">₹30/km</div>
+          </div>
+          
+          <div class="car-features">
+            <div class="car-feature">
+              <i class="fas fa-users"></i>
+              <span>7 Seater</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-snowflake"></i>
+              <span>AC</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-gas-pump"></i>
+              <span>Diesel</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>Automatic</span>
+            </div>
+          </div>
+          
+          <p class="car-description">
+            The Toyota Fortuner offers commanding road presence, powerful performance, and premium features for an exceptional SUV experience.
+          </p>
+          
+          <div class="car-actions">
+            <button class="btn-book" data-bs-toggle="modal" data-bs-target="#bookingModal" data-car="Toyota Fortuner">Book Now</button>
+            <button class="btn-details" data-bs-toggle="modal" data-bs-target="#carModal" data-car="fortuner">Details</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Maruti Ertiga -->
+      <div class="car-card" data-category="mpv">
+        <div class="car-image">
+          <img src="images/ertiga.avif" alt="Maruti Suzuki Ertiga">
+        </div>
+        <div class="car-details">
+          <div class="car-title">
+            <div>
+              <h3>Maruti Suzuki Ertiga</h3>
+              <p class="text-muted">Compact MPV</p>
+            </div>
+            <div class="car-price">₹18/km</div>
+          </div>
+          
+          <div class="car-features">
+            <div class="car-feature">
+              <i class="fas fa-users"></i>
+              <span>7 Seater</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-snowflake"></i>
+              <span>AC</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-gas-pump"></i>
+              <span>Petrol</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>Manual</span>
+            </div>
+          </div>
+          
+          <p class="car-description">
+            The Maruti Suzuki Ertiga is a fuel-efficient and spacious MPV perfect for family trips with its comfortable seating and smooth ride quality.
+          </p>
+          
+          <div class="car-actions">
+            <button class="btn-book" data-bs-toggle="modal" data-bs-target="#bookingModal" data-car="Maruti Suzuki Ertiga">Book Now</button>
+            <button class="btn-details" data-bs-toggle="modal" data-bs-target="#carModal" data-car="ertiga">Details</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Honda Amaze -->
+      <div class="car-card" data-category="sedan">
+        <div class="car-image">
+          <img src="images/amaze.jpg" alt="Honda Amaze">
+        </div>
+        <div class="car-details">
+          <div class="car-title">
+            <div>
+              <h3>Honda Amaze</h3>
+              <p class="text-muted">Compact Sedan</p>
+            </div>
+            <div class="car-price">₹15/km</div>
+          </div>
+          
+          <div class="car-features">
+            <div class="car-feature">
+              <i class="fas fa-users"></i>
+              <span>5 Seater</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-snowflake"></i>
+              <span>AC</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-gas-pump"></i>
+              <span>Petrol</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>Manual</span>
+            </div>
+          </div>
+          
+          <p class="car-description">
+            The Honda Amaze offers premium features in a compact package with excellent fuel efficiency, comfortable ride, and Honda's renowned reliability.
+          </p>
+          
+          <div class="car-actions">
+            <button class="btn-book" data-bs-toggle="modal" data-bs-target="#bookingModal" data-car="Honda Amaze">Book Now</button>
+            <button class="btn-details" data-bs-toggle="modal" data-bs-target="#carModal" data-car="amaze">Details</button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mahindra Xylo -->
+      <div class="car-card" data-category="mpv">
+        <div class="car-image">
+          <img src="images/xylo.png" alt="Mahindra Xylo">
+        </div>
+        <div class="car-details">
+          <div class="car-title">
+            <div>
+              <h3>Mahindra Xylo</h3>
+              <p class="text-muted">Spacious MPV</p>
+            </div>
+            <div class="car-price">₹20/km</div>
+          </div>
+          
+          <div class="car-features">
+            <div class="car-feature">
+              <i class="fas fa-users"></i>
+              <span>8 Seater</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-snowflake"></i>
+              <span>AC</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-gas-pump"></i>
+              <span>Diesel</span>
+            </div>
+            <div class="car-feature">
+              <i class="fas fa-tachometer-alt"></i>
+              <span>Manual</span>
+            </div>
+          </div>
+          
+          <p class="car-description">
+            The Mahindra Xylo offers exceptional space and comfort with its roomy interior, making it ideal for large families and group travels.
+          </p>
+          
+          <div class="car-actions">
+            <button class="btn-book" data-bs-toggle="modal" data-bs-target="#bookingModal" data-car="Mahindra Xylo">Book Now</button>
+            <button class="btn-details" data-bs-toggle="modal" data-bs-target="#carModal" data-car="xylo">Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Rental Benefits Section -->
+<section class="rental-benefits">
+  <div class="container">
+    <div class="benefits-header">
+      <h2>Why Rent With Us?</h2>
+      <p class="lead">We provide the best car rental experience with our premium services</p>
+    </div>
+    
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <h4>Well-Maintained Fleet</h4>
+        <p>All our vehicles undergo regular maintenance and safety checks to ensure a smooth and safe journey.</p>
+      </div>
+      
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-rupee-sign"></i>
+        </div>
+        <h4>Competitive Pricing</h4>
+        <p>Transparent pricing with no hidden charges. We offer the best value for your money.</p>
+      </div>
+      
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-user-tie"></i>
+        </div>
+        <h4>Professional Drivers</h4>
+        <p>Our experienced and courteous drivers ensure a comfortable and hassle-free travel experience.</p>
+      </div>
+      
+      <div class="benefit-card">
+        <div class="benefit-icon">
+          <i class="fas fa-headset"></i>
+        </div>
+        <h4>24/7 Support</h4>
+        <p>Round-the-clock customer support to assist you with any queries or emergencies during your journey.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Rental Process Section -->
+<section class="rental-process">
+  <div class="container">
+    <div class="process-header">
+      <h2>How to Book a Car</h2>
+      <p class="lead">Simple and hassle-free booking process</p>
+    </div>
+    
+    <div class="process-steps">
+      <div class="process-step">
+        <div class="step-number">1</div>
+        <h4>Choose Your Car</h4>
+        <p>Select from our wide range of well-maintained vehicles that suit your needs and budget.</p>
+      </div>
+      
+      <div class="process-step">
+        <div class="step-number">2</div>
+        <h4>Book Online or Call</h4>
+        <p>Book directly through our website or call us to confirm your booking with our executive.</p>
+      </div>
+      
+      <div class="process-step">
+        <div class="step-number">3</div>
+        <h4>Confirm Details</h4>
+        <p>Provide your travel details, pickup location, and any special requirements you may have.</p>
+      </div>
+      
+      <div class="process-step">
+        <div class="step-number">4</div>
+        <h4>Enjoy Your Ride</h4>
+        <p>Our driver will arrive on time at your location for a comfortable and safe journey.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Car Details Modal -->
+<div class="modal fade" id="carModal" tabindex="-1" aria-labelledby="carModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="carModalLabel">Car Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img id="carModalImage" src="" alt="" class="car-modal-image">
+        <h4 id="carModalTitle" class="mb-3"></h4>
+        <p id="carModalDescription" class="mb-4"></p>
+        
+        <h5>Specifications</h5>
+        <div class="car-specs" id="carModalSpecs">
+          <!-- Specifications will be dynamically added -->
+        </div>
+        
+        <h5>Features</h5>
+        <div class="car-features mb-4" id="carModalFeatures">
+          <!-- Features will be dynamically added -->
+        </div>
+        
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h4 id="carModalPrice" class="text-primary mb-0"></h4>
+            <small class="text-muted">Per kilometer</small>
+          </div>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#bookingModal" data-bs-dismiss="modal">Book This Car</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Booking Modal -->
+<div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bookingModalLabel">Book Your Car</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="bookingForm">
+          <div class="mb-3">
+            <label for="carSelect" class="form-label">Selected Car</label>
+            <input type="text" class="form-control" id="carSelect" readonly>
+          </div>
+          <div class="mb-3">
+            <label for="customerName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="customerName" required>
+          </div>
+          <div class="mb-3">
+            <label for="customerPhone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="customerPhone" required>
+          </div>
+          <div class="mb-3">
+            <label for="customerEmail" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="customerEmail">
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="pickupDate" class="form-label">Pickup Date</label>
+              <input type="date" class="form-control" id="pickupDate" required>
+            </div>
+            <div class="col-md-6">
+              <label for="pickupTime" class="form-label">Pickup Time</label>
+              <input type="time" class="form-control" id="pickupTime" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="pickupLocation" class="form-label">Pickup Location</label>
+            <textarea class="form-control" id="pickupLocation" rows="2" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="tripType" class="form-label">Trip Type</label>
+            <select class="form-select" id="tripType" required>
+              <option value="" selected disabled>Select trip type</option>
+              <option value="one-way">One Way</option>
+              <option value="round-trip">Round Trip</option>
+              <option value="multiple-days">Multiple Days</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="specialRequests" class="form-label">Special Requests</label>
+            <textarea class="form-control" id="specialRequests" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Submit Booking Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer id="contact" class="bg-dark  pt-5 pb-3 mt-5">
+  <div class="container">
+    <!-- Brand / Short Info -->
+    <h3 class="mb-3 fw-semibold">Contact Us</h3>
+    <p class="text-light mb-4" style="max-width: 500px;">
+     <center>We at <strong>Sri Ayyapan Travels</strong> are dedicated to making your journey safe,
+      comfortable, and memorable. Get in touch with us for bookings, inquiries, or travel assistance.</center> 
+    </p>
+
+    <!-- Contact Details -->
+    <p><i class="fas fa-map-marker-alt me-2"></i>Chennai, Tamil Nadu, India</p>
+    <p>
+      <i class="fas fa-phone-alt me-2 "></i>
+      <a href="tel:+919940503503" class="text-black text-decoration-none">+91 99405 03503</a>
+    </p>
+    <p>
+      <i class="fas fa-phone-alt me-2"></i>
+      <a href="tel:+918667236283" class="text-black text-decoration-none">+91 86672 36283</a>
+    </p>
+    <p>
+      <i class="fas fa-envelope me-2"></i>
+      <a href="mailto:ayyapantravels@example.com" class="text-black text-decoration-none">sriayyappantourntravels@gmail.com</a>
+    </p>
+
+    <!-- Social Links -->
+    <div class="mt-4">
+      <a href="#" class="text-black me-3"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="#" class="text-black me-3"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="#" class="text-black me-3"><i class="fab fa-twitter fa-lg"></i></a>
+      <a href="#" class="text-black "><i class="fab fa-whatsapp fa-lg"></i></a>
+    </div>
+
+    <!-- Footer Bottom -->
+    <hr class="bg-secondary mt-4" />
+    <p class="text-muted mb-0 small">&copy; 2025 Sri Ayyapan Travels. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Navbar scroll effect
+  window.addEventListener('scroll', () => {
+    const navbar = document.getElementById('mainNavbar');
+    if (window.scrollY > 50) {
+      navbar.classList.add('navbar-scrolled');
+    } else {
+      navbar.classList.remove('navbar-scrolled');
+    }
+  });
+  
+  // Sidebar functions
+  function openSidebar() {
+    document.getElementById("mySidebar").style.width = "250px";
+  }
+  
+  function closeSidebar() {
+    document.getElementById("mySidebar").style.width = "0";
+  }
+  
+  // Car filter functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('.car-filter-btn');
+    const carCards = document.querySelectorAll('.car-card');
+    
+    filterButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        // Remove active class from all buttons
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        
+        // Add active class to clicked button
+        this.classList.add('active');
+        
+        const filterValue = this.getAttribute('data-filter');
+        
+        carCards.forEach(card => {
+          if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+    
+    // Car details modal functionality
+    const carModal = document.getElementById('carModal');
+    if (carModal) {
+      carModal.addEventListener('show.bs.modal', function(event) {
+        const button = event.relatedTarget;
+        const carType = button.getAttribute('data-car');
+        
+        // Set car details based on car type
+        setCarDetails(carType);
+      });
+    }
+    
+    // Booking modal functionality
+    const bookingModal = document.getElementById('bookingModal');
+    if (bookingModal) {
+      bookingModal.addEventListener('show.bs.modal', function(event) {
+        const button = event.relatedTarget;
+        const carName = button.getAttribute('data-car');
+        document.getElementById('carSelect').value = carName;
+      });
+    }
+    
+    // Booking form submission
+    const bookingForm = document.getElementById('bookingForm');
+    if (bookingForm) {
+      bookingForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Collect form data
+        const carName = document.getElementById('carSelect').value;
+        const customerName = document.getElementById('customerName').value;
+        const customerPhone = document.getElementById('customerPhone').value;
+        const customerEmail = document.getElementById('customerEmail').value;
+        const pickupDate = document.getElementById('pickupDate').value;
+        const pickupTime = document.getElementById('pickupTime').value;
+        const pickupLocation = document.getElementById('pickupLocation').value;
+        const tripType = document.getElementById('tripType').value;
+        const specialRequests = document.getElementById('specialRequests').value;
+        
+        // Format WhatsApp message
+        const whatsappNumber = "919940503503";
+        const text = `*New Car Rental Booking*%0A
+---------------------%0A
+*Car:* ${carName}%0A
+*Name:* ${customerName}%0A
+*Phone:* ${customerPhone}%0A
+*Email:* ${customerEmail}%0A
+*Pickup Date:* ${pickupDate}%0A
+*Pickup Time:* ${pickupTime}%0A
+*Pickup Location:* ${pickupLocation}%0A
+*Trip Type:* ${tripType}%0A
+*Special Requests:* ${specialRequests || 'None'}%0A
+---------------------%0A`;
+        
+        // Open WhatsApp
+        const whatsappURL = `https://wa.me/${whatsappNumber}?text=${text}`;
+        window.open(whatsappURL, "_blank");
+        
+        // Close modal
+        const modal = bootstrap.Modal.getInstance(bookingModal);
+        modal.hide();
+        
+        // Reset form
+        bookingForm.reset();
+      });
+    }
+    
+    // Function to set car details in modal
+    function setCarDetails(carType) {
+      const carData = {
+        hycross: {
+          image: "images/hycross.jpg",
+          title: "Toyota Innova Hycross",
+          description: "The Toyota Innova Hycross offers premium comfort with its hybrid powertrain, spacious interior, and advanced features for a smooth ride. Perfect for family trips and corporate travel.",
+          price: "₹25/km",
+          specs: [
+            { icon: "fas fa-users", text: "7 Seater" },
+            { icon: "fas fa-gas-pump", text: "Petrol Hybrid" },
+            { icon: "fas fa-tachometer-alt", text: "Automatic" },
+            { icon: "fas fa-cogs", text: "2.0L Engine" }
+          ],
+          features: [
+            { icon: "fas fa-snowflake", text: "Dual Zone AC" },
+            { icon: "fas fa-tv", text: "Touchscreen Infotainment" },
+            { icon: "fas fa-camera", text: "Rear Camera" },
+            { icon: "fas fa-lock", text: "Keyless Entry" }
+          ]
+        },
+        crysta: {
+          image: "images/crysta.jpg",
+          title: "Toyota Innova Crysta",
+          description: "The Toyota Innova Crysta is known for its reliability, powerful performance, and spacious cabin perfect for family trips and corporate travel.",
+          price: "₹22/km",
+          specs: [
+            { icon: "fas fa-users", text: "7 Seater" },
+            { icon: "fas fa-gas-pump", text: "Diesel" },
+            { icon: "fas fa-tachometer-alt", text: "Manual" },
+            { icon: "fas fa-cogs", text: "2.4L Engine" }
+          ],
+          features: [
+            { icon: "fas fa-snowflake", text: "Powerful AC" },
+            { icon: "fas fa-tv", text: "Touchscreen" },
+            { icon: "fas fa-camera", text: "Parking Sensors" },
+            { icon: "fas fa-lock", text: "Central Locking" }
+          ]
+        },
+        fortuner: {
+          image: "images/fortuner.jpg",
+          title: "Toyota Fortuner",
+          description: "The Toyota Fortuner offers commanding road presence, powerful performance, and premium features for an exceptional SUV experience.",
+          price: "₹30/km",
+          specs: [
+            { icon: "fas fa-users", text: "7 Seater" },
+            { icon: "fas fa-gas-pump", text: "Diesel" },
+            { icon: "fas fa-tachometer-alt", text: "Automatic" },
+            { icon: "fas fa-cogs", text: "2.8L Engine" }
+          ],
+          features: [
+            { icon: "fas fa-snowflake", text: "Dual Zone AC" },
+            { icon: "fas fa-tv", text: "Large Touchscreen" },
+            { icon: "fas fa-camera", text: "360 Camera" },
+            { icon: "fas fa-lock", text: "Smart Key" }
+          ]
+        },
+        ertiga: {
+          image: "images/ertiga.jpg",
+          title: "Maruti Suzuki Ertiga",
+          description: "The Maruti Suzuki Ertiga is a fuel-efficient and spacious MPV perfect for family trips with its comfortable seating and smooth ride quality.",
+          price: "₹18/km",
+          specs: [
+            { icon: "fas fa-users", text: "7 Seater" },
+            { icon: "fas fa-gas-pump", text: "Petrol" },
+            { icon: "fas fa-tachometer-alt", text: "Manual" },
+            { icon: "fas fa-cogs", text: "1.5L Engine" }
+          ],
+          features: [
+            { icon: "fas fa-snowflake", text: "AC with Climate Control" },
+            { icon: "fas fa-tv", text: "Smartplay Studio" },
+            { icon: "fas fa-camera", text: "Rear Camera" },
+            { icon: "fas fa-lock", text: "Central Locking" }
+          ]
+        },
+        amaze: {
+          image: "images/amaze.jpg",
+          title: "Honda Amaze",
+          description: "The Honda Amaze offers premium features in a compact package with excellent fuel efficiency, comfortable ride, and Honda's renowned reliability.",
+          price: "₹15/km",
+          specs: [
+            { icon: "fas fa-users", text: "5 Seater" },
+            { icon: "fas fa-gas-pump", text: "Petrol" },
+            { icon: "fas fa-tachometer-alt", text: "Manual" },
+            { icon: "fas fa-cogs", text: "1.2L Engine" }
+          ],
+          features: [
+            { icon: "fas fa-snowflake", text: "Automatic Climate Control" },
+            { icon: "fas fa-tv", text: "Touchscreen" },
+            { icon: "fas fa-camera", text: "Rear Camera" },
+            { icon: "fas fa-lock", text: "Keyless Entry" }
+          ]
+        },
+        xylo: {
+          image: "images/xylo.jpg",
+          title: "Mahindra Xylo",
+          description: "The Mahindra Xylo offers exceptional space and comfort with its roomy interior, making it ideal for large families and group travels.",
+          price: "₹20/km",
+          specs: [
+            { icon: "fas fa-users", text: "8 Seater" },
+            { icon: "fas fa-gas-pump", text: "Diesel" },
+            { icon: "fas fa-tachometer-alt", text: "Manual" },
+            { icon: "fas fa-cogs", text: "2.2L Engine" }
+          ],
+          features: [
+            { icon: "fas fa-snowflake", text: "Powerful AC" },
+            { icon: "fas fa-tv", text: "Music System" },
+            { icon: "fas fa-camera", text: "Parking Sensors" },
+            { icon: "fas fa-lock", text: "Central Locking" }
+          ]
+        }
+      };
+      
+      const car = carData[carType];
+      if (car) {
+        document.getElementById('carModalImage').src = car.image;
+        document.getElementById('carModalImage').alt = car.title;
+        document.getElementById('carModalTitle').textContent = car.title;
+        document.getElementById('carModalDescription').textContent = car.description;
+        document.getElementById('carModalPrice').textContent = car.price;
+        
+        // Set specifications
+        const specsContainer = document.getElementById('carModalSpecs');
+        specsContainer.innerHTML = '';
+        car.specs.forEach(spec => {
+          const specItem = document.createElement('div');
+          specItem.className = 'spec-item';
+          specItem.innerHTML = `
+            <div class="spec-icon"><i class="${spec.icon}"></i></div>
+            <div>${spec.text}</div>
+          `;
+          specsContainer.appendChild(specItem);
+        });
+        
+        // Set features
+        const featuresContainer = document.getElementById('carModalFeatures');
+        featuresContainer.innerHTML = '';
+        car.features.forEach(feature => {
+          const featureItem = document.createElement('div');
+          featureItem.className = 'car-feature';
+          featureItem.innerHTML = `
+            <i class="${feature.icon}"></i>
+            <span>${feature.text}</span>
+          `;
+          featuresContainer.appendChild(featureItem);
+        });
+        
+        // Update booking form with selected car
+        document.getElementById('carSelect').value = car.title;
+      }
+    }
+  });
+</script>
+</body>
+</html>
